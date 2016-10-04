@@ -15,7 +15,7 @@ class MattsLines extends Question{
     this.container.appendChild(canvas);
     this.ctx = canvas.getContext('2d');
 
-    let style = getComputedStyle(container);
+    let style = getComputedStyle(this.container);
     let width = parseInt(style.width, 10);
     let height = Matts.getHeight(this.mattSize) * lineNum + 1;
 
