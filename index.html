@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="print.css" />
+</head>
+<body>
+    <div id="paper"></div>
+</body>
+<script src="Util.js"></script>
+<script src="Matts.js"></script>
+<script src="py.js"></script>
+<script src="PhoneticNotation.js"></script>
+<script src="Question.js"></script>
+<script src="MattsLines.js"></script>
+<script src="Arith.js"></script>
+<script>
+    let container = document.getElementById('paper');
+
+    var lines = new MattsLines(container);
+    lines.draw(['丁', '金', '鱼', '全']);
+
+    var simpleArith = new Arith(container);
+    simpleArith.draw();
+</script>
+</html>
