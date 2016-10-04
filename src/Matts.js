@@ -1,6 +1,8 @@
+import phoneticNotation from './phoneticNotation';
+
 const SPELL_SIZE_RETIO = 0.6;
 
-class Matts {
+export default class Matts {
 
   constructor(ctx) {
     this.ctx = ctx;
@@ -57,7 +59,7 @@ class Matts {
     this.ctx.textAlign='center';
     this.ctx.textBaseline='middle';
 
-    let spell = char ? PhoneticNotation.find(char) : '';
+    let spell = char ? phoneticNotation.find(char) : '';
     this.ctx.fillText(spell, 0, 0);
     this.ctx.restore();
   }

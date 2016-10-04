@@ -10,3 +10,5 @@ let Util = {
     return colors[parseInt(Math.random() * colors.length)];
   }
 };
+
+export default Util;

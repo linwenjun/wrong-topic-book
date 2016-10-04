@@ -1,4 +1,6 @@
-class Arith extends Question{
+import Question from './Question';
+
+export default class Arith extends Question{
   constructor(container) {
     super(container);
     this.instruction = "加减法";

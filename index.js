@@ -1,3 +1,5 @@
+import MattsLines from './src/MattsLines';
+import Arith from './src/Arith';
 
 let container = document.getElementById('paper');
 

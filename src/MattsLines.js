@@ -1,4 +1,7 @@
-class MattsLines extends Question{
+import Question from './Question';
+import Matts from './Matts';
+
+export default class MattsLines extends Question{
   constructor(container) {
     super(container);
     this.margin = 10;

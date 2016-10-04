@@ -1,6 +1,8 @@
+import Util from './Util';
+
 let _index = 0;
 
-class Question {
+export default class Question {
   constructor(container) {
     this.container = container;
   }
